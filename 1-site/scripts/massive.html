@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      "use strict";
+      //1
+      //   let musicStyle = ["Jazz", "Blues"];
+      //   alert(musicStyle);
+      //   musicStyle.push("Rock-n-roll");
+      //   alert(musicStyle);
+      //   styles[Math.floor((styles.length - 1) / 2)] = "Classic";
+      //   alert(musicStyle);
+      //   alert(musicStyle.shift());
+      //   musicStyle.unshift("Raggie", "Rap");
+      //   alert(musicStyle);
+
+      //2
+      // function sumInput() {
+      //   let arrayOfNumbers = [];
+      //   let result = 0;
+      //   let x = 0;
+      //   while (true) {
+      //     x = prompt("enter a number", "");
+      //     if (x === null || x === "" || isNaN(x)) {
+      //       break;
+      //     }
+      //     arrayOfNumbers.push(x);
+      //   }
+
+      //   arrayOfNumbers.forEach((i) => (result += +i));
+      //   return result;
+      // }
+
+      // alert(`sum is ${sumInput()}`);
+
+      //3
+      // let arrOne = [-1, 2, 3, -9, 11];
+      // let arrTwo = [-2, -3, -4];
+      // let arrThree = [100, -1];
+      // function getMaxSubSum(array) {
+      //   let max = 0;
+      //   for (let i = 0; i < array.length; i++) {
+      //     let maxSubSum = 0;
+      //     for (let j = i; j < array.length; j++) {
+      //       maxSubSum += array[j];
+      //       if (maxSubSum > max) {
+      //         max = maxSubSum;
+      //       }
+
+      //     }
+      //   }
+      //   return max;
+      // }
+      // alert(getMaxSubSum(arrOne));
+
+      //4
+      // let arrOne = [-1, 2, 3, -9, 11];
+      // alert(arrOne.sort((a, b) => a - b));
+
+      //5
+      // function camelize(string) {
+      //   let arrayOfStrings = string.split("-");
+      //   let newArray = [];
+      //   arrayOfStrings.forEach((str) => {
+      //     let newStr = str[0].toUpperCase() + str.slice(1);
+      //     newArray.push(newStr);
+      //   });
+
+      //   let result = newArray.join("");
+      //   return result;
+      // }
+      // alert(camelize("return-me-this-shit"));
+
+      //6
+
+      function filterRange(arr, a, b) {
+        return arr.filter((item) => a <= item && item <= b);
+      }
+
+
+      alert(filterRange([1, 2, 3, 4, 5], 2, 5));
+    </script>
+  </body>
+</html>
